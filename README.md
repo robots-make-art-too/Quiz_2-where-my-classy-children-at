@@ -2,7 +2,7 @@
 
 Starter pack for EECS 1720 Quiz 2. Probably you should start by reading this first...
 
-## initialize
+## Initialize
 
 So. Your repo should look like this. Pay attention!!!
 
@@ -17,9 +17,9 @@ See this image for reference:
 
 In your `Quiz 2` package you have the following directories, where `root` is `Quiz_2-where-my-classy-children-at`:
 
-- root/                     | README.md, STATEMENT.md
-- root/Code/                | general container
-- root/Code/p5jsQ2/         | `p5js` content
-- root/Code/pydeQ2/         | `python`-mode content
-- root/Code/references/     | functions and content to use
+- root/..................| README.md, STATEMENT.md
+- root/Code/.............| general container
+- root/Code/p5jsQ2/......| `p5js` content
+- root/Code/pydeQ2/......| `python`-mode content
+- root/Code/references/..| functions and content to use
 
