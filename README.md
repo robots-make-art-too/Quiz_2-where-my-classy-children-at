@@ -37,6 +37,7 @@ Inside ~both~ the ~`p5jsQ2/` and~ `pydeQ2/` folder is a `data` folder. If you ne
 2. Check that your `python`-mode processing folder (currently `pydeQ2`) matches the name of your processing sketch file.
 3. Are you using the correct version of processing?
 4. Have you installed or loaded any libraries you need?
+5. Be sure to tell me all about your personal choices made here, and why, in the STATEMENT.md file.
 
 ---
 
@@ -52,12 +53,12 @@ Here is what I know:
 - there is _at least_ 1 (one) grand-child baby robot. You could say its head was round.
 - I've personally met 2 (two) of the robots that are children; but they have different shapes for heads.
 - 1 (one) of the children I met shares the same head shape as 1 (one) of its parents. Both of that child's parents have head shapes that are different than that other child I met.
-- there are three head shapes: triangles(), rectangles(), ellipses()
+- there are three head shapes: triangles(), rectangles(), ellipses().
 - there are _at least_ 3 (three) children with one shape; 2 (two) children with a second shape; and 1 (one) child with a third shape.
-- some of the children could be parents
-- I don't know what their heirarchy is, but there is _definitely_ 1 (one) sharp robot in charge. I think it's the _oldest_... so let's call it `oldBot` (do robots age though?)
-- Yes, they are all probably related in some way to `oldBot`
-- At least 4 (four) robots come from a single (1) parent (I don't think it's the _same_ single parent for _all_ of them though)
+- some of the children could be parents.
+- I don't know what their heirarchy is, but there is _definitely_ 1 (one) sharp robot in charge. I think it's the _oldest_... so let's call it `oldBot` (do robots age though?).
+- Yes, they are all probably related in some way to `oldBot`.
+- At least 4 (four) robots come from a single (1) parent (I don't think it's the _same_ single parent for _all_ of them though).
 
 ## LITTLE PICTURE
 
@@ -71,13 +72,18 @@ The tools you have to work with are the functions listed in the `Code/references
 6. OH! I almost forgot. _You have to teach_ at least 2 (two) of them a new trick. Some `Method` of doing, or being, something. Lets call it _flare_. Give the robots some _flare_! I don't care what you teach them, maybe you teach them to squeak, maybe you teach them to blush, or even move? Whatever your `Method`, make sure 2 (two) robots can do something different. Just so it stays in the family, you should probably find some way to `Encapsulate` these skills so they can be passed on to some children
    - you could find some _flare_ at the processing ~_store_~ _website_
    - they have colours, sounds, and, who knows what else!
+   - (maybe they react to each other or to you?)
+
+---
+
+A little hint to get you started:
 
 ```Python
 babyBot = ClassyRobot()
 
 def class ClassyRobot(param,param,shbam):
-    def __init__(param, ...):
-        param = param
+    def __init__(self, param, ...):
+        self.param = param
         ...
     def ?:
         ...
