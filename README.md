@@ -24,3 +24,5 @@ In your `Quiz 2` package you have the following directories, where `root` is `Qu
 - root/Code/references/-| functions and content to use
 
 So, as you can imagine, `p5jsQ2/` will contain template `JavaScript` where you will add _some_ `p5js`, and `pydeQ2/` will contain template `python` where you will add _more than some_ `python`.
+
+Any `p5js` libraries are provided, and you _should_ already have any processing `python` mode libraries installed _from before_ (otherwise you should probably install them now).
