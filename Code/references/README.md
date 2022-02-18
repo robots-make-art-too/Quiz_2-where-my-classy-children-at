@@ -164,6 +164,6 @@ Nope!
 ## Some other maybe useful functions?
 
 1. [requestImage()](https://py.processing.org/reference/requestImage.html)
-   - maybe you _do_ want to load a background image for the photo afterall
+   - maybe you _do_ want to load a background image for the photo after all
 2. But [loadImage()](https://py.processing.org/reference/loadImage.html) is probably all you might want
    - you could also use it for the family photo album, if you have one?
