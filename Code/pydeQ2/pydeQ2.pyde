@@ -1,4 +1,4 @@
-# Quiz 2 - PUT YOUR NAME HERE -- AND BE SURE TO ERASE ALL MY EXTRA COMMENTS WHEN YOU SUBMIT - INCLUDE __ONLY__ YOUR OWN, AND ONLY IF THEY ARE RELEVANT (or hilarious)
+# I run in processing -- but please rename me to test.py when you are done and then edit the clean version: pyde
 
 ###
 # what do we need for our concept?

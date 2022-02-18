@@ -36,8 +36,8 @@ Inside ~both~ the ~`p5jsQ2/` and~ `pydeQ2/` folder is a `data` folder. If you ne
 1. ~Check the `index.html` file and be sure it is loading the correct JavaScript file.~
 2. Check that your `python`-mode processing folder (currently `pydeQ2`) matches the name of your processing sketch file.
 3. Are you using the correct version of processing?
-4. Have you installed or loaded any libraries you need?
-5. Be sure to tell me all about your personal choices made here, and why, in the STATEMENT.md file.
+4. Have you installed or loaded any libraries you need? (Including python mode?)
+5. Be sure to tell me all about your personal choices, and why, in the STATEMENT.md file.
 6. This [link](https://py.processing.org/reference/createShape.html) could be totally useful - but all you really need is in the `reference/` docs.
 
 ---
@@ -46,7 +46,7 @@ Inside ~both~ the ~`p5jsQ2/` and~ `pydeQ2/` folder is a `data` folder. If you ne
 
 There is a robot family. Somehow they are a multi-generational family all living together. I don't remember all their names so you'll have to find a way to identify them individually. They _kind-of_ look alike, but I'm not sure which robot children belong to which robot parents... or if some are grand-children or grand-parents!! Need your help sorting this out. We don't have _alot_ of time because they have to leave Sunday.
 >
-> Your mission is to find out who is who, what they look like, and what they can do. Just in case they leave early, you'll have to _draw_ them to the screen and save it as a photo, `classy-robot-family.jpg`. I want to put it in my digital photo album. You might want to consider how you will label them, and how you will show me who is related to who, and how (maybe use text? maybe print their name to screen? or file? you could draw a line between parents and children? or maybe you draw them oldest in the center and children in front of parents? you decide!)
+> Your mission is to find out who is who, what they look like, and what they can do. Just in case they leave early, you'll have to _draw_ them to the screen and save it as a photo, `classy-robot-family.png`. I want to put it in my digital photo album. You might want to consider how you will label them, and how you will show me who is related to who, and how (maybe use text? maybe print their name to screen? or file? you could draw a line between parents and children? or maybe you draw them oldest in the center and children in front of parents? you decide!)
 >
 
 Here is what I know:
@@ -82,8 +82,8 @@ A little hint to get you started:
 ```Python
 babyBot = ClassyRobot()
 
-def class ClassyRobot(param,param,shbam):
-    def __init__(self, param, ...):
+def class ClassyRobot():
+    def __init__(self, param, shbam, ...):
         self.param = param
         ...
     def ?:

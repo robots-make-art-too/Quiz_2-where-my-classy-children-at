@@ -1,6 +1,6 @@
 # References
 
-These are your robot building blocks. These functions must be used for our `skeletons`.
+These are your robot building blocks. These functions must be used for your `robot bones`.
 If you are adding _flare_ be sure to do so once the robot family is constructed.
 The sample functions are taken directly from the processing website - they are examples of both _syntax_ and _useage_.
 
