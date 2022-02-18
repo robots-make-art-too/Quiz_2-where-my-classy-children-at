@@ -14,7 +14,7 @@ The main concepts of `OOP` are:
 
 ### Class
 
-In `python`, a `class` is created with the `keyword` `class`. Any `attributes` are the _variables_ that belong to a `class.
+In `python`, a `class` is created with the `keyword` `class`. Any `attributes` are the _variables_ that belong to a `class`.
 
 - Attributes are public
 - They are accessed with a `dot (.)` operator
