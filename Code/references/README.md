@@ -14,6 +14,8 @@ The functions in `python`-mode of `processing` are the same as those used in `p5
 
 Here they are in `python`; we describe them in `JavaScript` in the next section:
 
+### Shape stuff?
+
 ```Python
 triangle(x1, y1, x2, y2, x3, y3)
 ```
@@ -28,6 +30,48 @@ ellipse(a, b, c, d)
 
 ```Python
 line(x1, y1, x2, y2)
+```
+
+### Font stuff?
+
+```Python
+# loadFont() and textFont()
+# for the specific font loaded
+font = loadFont("LetterGothicStd-32.vlw")
+background(0)
+textFont(font, 32)
+text("word", 10, 50)
+
+# just text and colour
+textSize(32)
+text("word", 10, 30)
+fill(0, 102, 153)
+text("word", 10, 60)
+fill(0, 102, 153, 51)
+text("word", 10, 90)
+
+# getting 3D-freaky with it
+size(100, 100, P3D)
+textSize(32)
+fill(0, 102, 153, 204)
+text("word", 12, 45, -30)  # Specify a z-axis value
+text("word", 12, 60)  # Default depth, no z-value specified
+```
+
+### Colour or stroke stuff?
+
+[colorMode()](https://py.processing.org/reference/colorMode.html) might be neat. 
+
+Or even  [hue()](https://py.processing.org/reference/hue.html)?
+
+```Python
+smooth()
+background()
+colorMode() # this is probably cool
+strokeWeight()
+noFill()
+noStroke()
+stroke()
 ```
 
 ## p5js mode
