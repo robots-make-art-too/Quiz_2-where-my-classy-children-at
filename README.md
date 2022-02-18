@@ -23,3 +23,4 @@ In your `Quiz 2` package you have the following directories, where `root` is `Qu
 - root/Code/pydeQ2/---| `python`-mode content
 - root/Code/references/-| functions and content to use
 
+So, as you can imagine, `p5jsQ2/` will contain template `JavaScript` where you will add _some_ `p5js`, and `pydeQ2/` will contain template `python` where you will add _more than some_ `python`.
