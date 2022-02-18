@@ -60,7 +60,7 @@ text("word", 12, 60)  # Default depth, no z-value specified
 
 ### Colour or stroke stuff?
 
-[colorMode()](https://py.processing.org/reference/colorMode.html) might be neat. 
+[colorMode()](https://py.processing.org/reference/colorMode.html) might be neat.
 
 Or even  [hue()](https://py.processing.org/reference/hue.html)?
 
