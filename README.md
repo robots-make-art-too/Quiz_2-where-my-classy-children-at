@@ -17,9 +17,9 @@ See this image for reference:
 
 In your `Quiz 2` package you have the following directories, where `root` is `Quiz_2-where-my-classy-children-at`:
 
-- root/-----------------| README.md, STATEMENT.md
+- root/------------------| README.md, STATEMENT.md
 - root/Code/------------| general container
-- root/Code/p5jsQ2/-----| `p5js` content
-- root/Code/pydeQ2/-----| `python`-mode content
+- root/Code/p5jsQ2/----| `p5js` content
+- root/Code/pydeQ2/---| `python`-mode content
 - root/Code/references/-| functions and content to use
 
