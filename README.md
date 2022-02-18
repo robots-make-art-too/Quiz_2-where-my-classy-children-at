@@ -1,4 +1,4 @@
-# Quiz_2-where-my-classy-children-at
+# Quiz 2: my classy robot children
 
 Starter pack for EECS 1720 Quiz 2. Probably you should start by reading this first...
 
@@ -12,4 +12,4 @@ In your `Quiz 2` package you have the following directories, where `root` is `Qu
 - root/Code/pydeQ2/         | `python`-mode content
 - root/Code/references/     | functions and content to use
 
- `![image](/Code/references/repo.png "This is what your repo should look like")`
+![image](/Code/references/repo.png "This is what your repo should look like")
