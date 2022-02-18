@@ -26,6 +26,10 @@ rect(a, b, c, d, r)
 ellipse(a, b, c, d)
 ```
 
+```Python
+line(x1, y1, x2, y2)
+```
+
 ## p5js mode
 
 ### Draw a triangle
@@ -106,3 +110,16 @@ Parameters:
 - y Number: y-coordinate of the center of ellipse
 - w Number: width of the ellipse
 - h Number: height of the ellipse. (Optional)
+
+---
+
+## SEE? It didn't matter if we described them in `JavaScript`, but use them in `Python`
+
+Nope!
+
+## Some other maybe useful functions?
+
+1. [requestImage()](https://py.processing.org/reference/requestImage.html)
+   - maybe you _do_ want to load a background image for the photo afterall
+2. But [loadImage()](https://py.processing.org/reference/loadImage.html) is probably all you might want
+   - you could also use it for the family photo album, if you have one?

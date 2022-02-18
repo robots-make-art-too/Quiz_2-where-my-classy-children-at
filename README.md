@@ -38,6 +38,7 @@ Inside ~both~ the ~`p5jsQ2/` and~ `pydeQ2/` folder is a `data` folder. If you ne
 3. Are you using the correct version of processing?
 4. Have you installed or loaded any libraries you need?
 5. Be sure to tell me all about your personal choices made here, and why, in the STATEMENT.md file.
+6. This [link](https://py.processing.org/reference/createShape.html) could be totally useful - but all you really need is in the `reference/` docs.
 
 ---
 
@@ -70,7 +71,7 @@ The tools you have to work with are the functions listed in the `Code/references
 4. It would be interesting to know which `parent(s)` a `child` might have `Inherited` their shape from
 5. How many are there? More than 1 (one). More than 2 (two). Probably many. Yep. `Polymorphism` at its best
 6. OH! I almost forgot. _You have to teach_ at least 2 (two) of them a new trick. Some `Method` of doing, or being, something. Lets call it _flare_. Give the robots some _flare_! I don't care what you teach them, maybe you teach them to squeak, maybe you teach them to blush, or even move? Whatever your `Method`, make sure 2 (two) robots can do something different. Just so it stays in the family, you should probably find some way to `Encapsulate` these skills so they can be passed on to some children
-   - you could find some _flare_ at the processing ~_store_~ _website_
+   - you could find some _flare_ at the processing ~_store_~ [_website_](https://py.processing.org/reference/)
    - they have colours, sounds, and, who knows what else!
    - (maybe they react to each other or to you?)
 
