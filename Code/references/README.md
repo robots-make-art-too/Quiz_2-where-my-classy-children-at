@@ -8,6 +8,24 @@ The sample functions are taken directly from the processing website - they are e
 
 ## python-mode
 
+The functions in `python`-mode of `processing` are the same as those used in `p5js`... the _only_ difference in the functions below is that in `python` the `Parameters` are `float` while in `p5js` the `Parameters` are `Number`.
+
+- does this matter? Not really for our sake
+
+Here they are in `python`; we describe them in `JavaScript` in the next section:
+
+```Python
+triangle(30, 75, 58, 20, 86, 75);
+```
+
+```Python
+rect(30, 20, 55, 55, 20);
+```
+
+```Python
+ellipse(56, 46, 55, 55);
+```
+
 ## p5js mode
 
 ### Draw a triangle
