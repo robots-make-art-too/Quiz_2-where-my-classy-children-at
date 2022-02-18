@@ -15,15 +15,15 @@ The functions in `python`-mode of `processing` are the same as those used in `p5
 Here they are in `python`; we describe them in `JavaScript` in the next section:
 
 ```Python
-triangle(30, 75, 58, 20, 86, 75);
+triangle(x1, y1, x2, y2, x3, y3)
 ```
 
 ```Python
-rect(30, 20, 55, 55, 20);
+rect(a, b, c, d, r)
 ```
 
 ```Python
-ellipse(56, 46, 55, 55);
+ellipse(a, b, c, d)
 ```
 
 ## p5js mode
