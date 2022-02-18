@@ -26,12 +26,13 @@ triangle(x1, y1, x2, y2, x3, y3)
 ```
 
 Parameters:
-  x1 Number: x-coordinate of the first point
-  y1 Number: y-coordinate of the first point
-  x2 Number: x-coordinate of the second point
-  y2 Number: y-coordinate of the second point
-  x3 Number: x-coordinate of the third point
-  y3 Number: y-coordinate of the third point
+
+- x1 Number: x-coordinate of the first point
+- y1 Number: y-coordinate of the first point
+- x2 Number: x-coordinate of the second point
+- y2 Number: y-coordinate of the second point
+- x3 Number: x-coordinate of the third point
+- y3 Number: y-coordinate of the third point
 
 ### Draw a rectangle
 
@@ -55,15 +56,16 @@ describe('white rect with black outline and round edges in mid-right of canvas')
 rect(x, y, w, [h], [tl], [tr], [br], [bl])
 ```
 
-Parameters
-  x Number: x-coordinate of the rectangle
-  y Number: y-coordinate of the rectangle
-  w Number: width of the rectangle
-  h Number: height of the rectangle. (Optional)
-  tl Number: optional radius of top-left corner. (Optional)
-  tr Number: optional radius of top-right corner. (Optional)
-  br Number: optional radius of bottom-right corner. (Optional)
-  bl Number:optional radius of bottom-left corner. (Optional)
+Parameters:
+
+- x Number: x-coordinate of the rectangle
+- y Number: y-coordinate of the rectangle
+- w Number: width of the rectangle
+- h Number: height of the rectangle. (Optional)
+- tl Number: optional radius of top-left corner. (Optional)
+- tr Number: optional radius of top-right corner. (Optional)
+- br Number: optional radius of bottom-right corner. (Optional)
+- bl Number:optional radius of bottom-left corner. (Optional)
 
 ### Draw an ellipse
 
@@ -80,8 +82,9 @@ describe('white ellipse with black outline in middle of a gray canvas');
 ellipse(x, y, w, [h])
 ```
 
-Parameters
-    x Number: x-coordinate of the center of ellipse
-    y Number: y-coordinate of the center of ellipse
-    w Number: width of the ellipse
-    h Number: height of the ellipse. (Optional)
+Parameters:
+
+- x Number: x-coordinate of the center of ellipse
+- y Number: y-coordinate of the center of ellipse
+- w Number: width of the ellipse
+- h Number: height of the ellipse. (Optional)
