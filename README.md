@@ -23,11 +23,11 @@ In your `Quiz 2` package you have the following directories, where `root` is `Qu
 - root/Code/pydeQ2/---| `python`-mode content
 - root/Code/references/-| functions and content to use
 
-So, as you can imagine, ~`p5jsQ2/` will contain template `JavaScript` where you will add _some_ `p5js`~, and `pydeQ2/` will contain template `python` where you will add _more than some_ `python`.
+So, as you can imagine, ~`p5jsQ2/` will contain template `JavaScript` where you will add _some_ `p5js`, and~ `pydeQ2/` will contain template `python` where you will add _more than some_ `python`.
 
-Any `p5js` libraries are provided, and you _should_ already have any processing `python` mode libraries installed _from before_ (otherwise you should probably install them now).
+~Any `p5js` libraries are provided, and~ you _should_ already have any processing `python` mode libraries installed _from before_ (otherwise you should probably install them now).
 
-Inside both the ~`p5jsQ2/`~ and `pydeQ2/` folder is a `data` folder. If you need to save anything like (e.g., images, texts, files) - save it _in there_.
+Inside ~both~ the ~`p5jsQ2/` and~ `pydeQ2/` folder is a `data` folder. If you need to save anything like (e.g., images, texts, files) - save it _in there_.
 
 ---
 
@@ -78,5 +78,7 @@ babyBot = ClassyRobot()
 def class ClassyRobot(param,param,shbam):
     def __init__(param, ...):
         param = param
+        ...
     def ?:
+        ...
 ```
