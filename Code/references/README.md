@@ -113,7 +113,7 @@ Parameters:
 
 ---
 
-## SEE? It didn't matter if we described them in `JavaScript`, but use them in `Python`
+## SEE? It didn't matter if we describe them in `JavaScript`, but use them in `Python`
 
 Nope!
 

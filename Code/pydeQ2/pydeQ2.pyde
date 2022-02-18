@@ -1,4 +1,5 @@
-# I run in processing -- but please rename me to test.py when you are done and then edit the clean version: pyde
+# I run in processing -- but please rename me to test.py when you are done and then edit the clean version: yourcopy.pyde
+# you should probably rename yourcopy.pyde to pydeQ2.pyde when you are ready to run!
 
 ###
 # what do we need for our concept?

@@ -1,4 +1,7 @@
-# Quiz 2 - PUT YOUR NAME HERE -- AND BE SURE TO ERASE ALL MY EXTRA COMMENTS WHEN YOU SUBMIT - INCLUDE __ONLY__ YOUR OWN, AND ONLY IF THEY ARE RELEVANT (or hilarious)
+# Quiz 2 - PUT YOUR NAME HERE
+# AND BE SURE TO ERASE ALL MY EXTRA COMMENTS (like this one) WHEN YOU SUBMIT
+# INCLUDE __ONLY__ YOUR OWN, AND ONLY IF THEY ARE RELEVANT (or hilarious)
+# RENAME this file to pydeQ2.pyde when you are ready
 
 ###
 # what do we need for our concept?

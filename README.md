@@ -80,7 +80,7 @@ The tools you have to work with are the functions listed in the `Code/references
 A little hint to get you started:
 
 ```Python
-babyBot = ClassyRobot()
+babyBot = ClassyRobot(0, 'bb', ...)
 
 def class ClassyRobot():
     def __init__(self, param, shbam, ...):
