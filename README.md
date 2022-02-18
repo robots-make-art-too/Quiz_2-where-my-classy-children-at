@@ -62,8 +62,7 @@ Here is what I know:
   - there are _at least_ 2 (two) children with shape b
   - there are _at least_ 2 (two) parents with shape b
   - there are _no more_ than 2 (two) parents with shape c
-- there are _at least_ 2 (two) parents with one shape; 3 (three) parents with
-- some of the children could be parents.
+- some of the children could be parents. Probably definitely.
 - I don't know what their heirarchy is, but there is _definitely_ 1 (one) sharp robot in charge. I think it's the _oldest_... so let's call it `oldBot` (do robots age though?).
 - Yes, they are all probably related in some way to `oldBot`.
 - At least 4 (four) robots come from a single (1) parent (I don't think it's the _same_ single parent for _all_ of them though).
