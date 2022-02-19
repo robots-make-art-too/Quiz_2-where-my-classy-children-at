@@ -188,33 +188,33 @@ In this example, you are setting `Square` as the subclass argument to `super()`,
 In this specific example, the behavior doesn’t change. But imagine that `Square` also implemented an `.area()` function that you wanted to make sure `Cube` did _not_ use. Calling `super()` in this way allows you to do that.
 
 >
-> Caution: While we are doing a lot of fiddling with the parameters to super() in order to explore how it works under the hood, I’d caution against doing this regularly.
+> Caution: While we are doing a lot of fiddling with the parameters to `super()` in order to explore how it works under the hood, I’d caution against doing this regularly.
 >
-> The parameterless call to super() is recommended and sufficient for most use cases, and needing to change the search hierarchy regularly could be indicative of a larger design issue.
+> The parameterless call to `super()` is recommended and sufficient for most use cases, and needing to change the search hierarchy regularly could be indicative of a larger design issue.
 >
 
-What about the second parameter? Remember, this is an object that is an instance of the class used as the first parameter. For an example, isinstance(Cube, Square) must return True.
+What about the second parameter? Remember, this is an object that is an instance of the class used as the first parameter. For an example, `isinstance(Cube, Square)` must return `True`.
 
-By including an instantiated object, super() returns a bound method: a method that is bound to the object, which gives the method the object’s context such as any instance attributes. If this parameter is not included, the method returned is just a function, unassociated with an object’s context.
+By including an instantiated object, `super()` returns a bound method: a method that is bound to the object, which gives the method the object’s context such as any instance attributes. If this parameter is not included, the method returned is just a function, unassociated with an object’s context.
 
 >
-> Note: Technically, super() doesn’t return a method. It returns a proxy object. This is an object that delegates calls to the correct class methods without making an additional object in order to do so.
+> Note: Technically, `super()` doesn’t return a method. It returns a proxy object. This is an object that delegates calls to the correct class methods without making an additional object in order to do so.
 >
 
 ---
 
 ## super() in Multiple Inheritance
 
-Now that you’ve worked through an overview and some examples of super() and single inheritance, you will be introduced to an overview and some examples that will demonstrate
-how multiple inheritance works and how super() enables that functionality.
+Now that you’ve worked through an overview and some examples of `super()` and single inheritance, you will be introduced to an overview and some examples that will demonstrate
+how multiple inheritance works and how `super()` enables that functionality.
 
-There is another use case in which super() really shines, and this one isn’t as common as the single inheritance scenario. In addition to single inheritance, Python supports multiple inheritance, in which a subclass can inherit from multiple superclasses that don’t necessarily inherit from each other (also known as sibling classes).
+There is another use case in which `super()` really shines, and this one isn’t as common as the single inheritance scenario. In addition to single inheritance, `Python` supports multiple inheritance, in which a subclass can inherit from multiple superclasses that don’t necessarily inherit from each other (_also known as sibling classes_).
 
-I’m a very visual person, and I find diagrams are incredibly helpful to understand concepts like this. The image below shows a very simple multiple inheritance scenario, where one class inherits from two unrelated (sibling) superclasses:
+Here's a diagram from the course source, could be helpful to understand concepts like this. The image below shows a very simple multiple inheritance scenario, where one class inherits from two unrelated (sibling) superclasses:
 
-![image](/Code/references/super.png) "Subclass inherits from two sibling Superclass")
+![image](/Code/references/super.png) "Subclass inherits from two sibling Superclass"
 
-To better illustrate multiple inheritance in action, here is some code for you to try out, showing how you can build a right pyramid (a pyramid with a square base) out of a Triangle and a Square:
+To better illustrate multiple inheritance in action, here is some code for you to try out, showing how you can build a right pyramid (a pyramid with a square base) out of a `Triangle` and a `Square`:
 
 ```Python
 class Triangle:
@@ -237,15 +237,15 @@ class RightPyramid(Triangle, Square):
     return 0.5 * perimeter * self.slant_height + base_area
 ```
 
-This example declares a Triangle class and a RightPyramid class that inherits from both Square and Triangle.
+This example declares a `Triangle` class and a `RightPyramid` class that inherits from both `Square` and `Triangle`.
 
-You’ll see another .area() method that uses super() just like in single inheritance, with the aim of it reaching the .perimeter() and .area() methods defined all the way up in the Rectangle class
+You’ll see another `.area()` method that uses `super()` just like in single inheritance, with the aim of it reaching the `.perimeter()` and `.area()` methods defined all the way up in the `Rectangle` class
 
 >
-> Note: You may notice that the code above isn’t using any inherited properties from the Triangle class yet. Later examples will fully take advantage of inheritance from both Triangle and Square.
+> Note: You may notice that the code above isn’t using any inherited properties from the `Triangle` class yet. Later examples will fully take advantage of inheritance from both `Triangle` and `Square`.
 >
 
-The problem, though, is that both superclasses (Triangle and Square) define a .area(). Take a second and think about what might happen when you call .area() on RightPyramid, and then try calling it like below:
+The problem, though, is that both superclasses (`Triangle` and `Square`) define a `.area()`. Take a second and think about what might happen when you call `.area()` on `RightPyramid`, and then try calling it like below:
 
 ```Python
 >> pyramid = RightPyramid(2, 4)
@@ -260,16 +260,72 @@ Traceback (most recent call last):
 AttributeError: 'RightPyramid' object has no attribute 'height'
 ```
 
-Did you guess that `Python` will try to call `Triangle.area()`? This is because of something called the _method resolution order_.
-
-### Method resolution order
-
 >
 > Note: How did we notice that `Triangle.area()` was called and not, as we hoped, `Square.area()`? If you look at the last line of the traceback (before the `AttributeError`), you’ll see a reference to a specific line of code:
 >
 > `return 0.5 * self.base * self.height`
 >
 >You may recognize this from geometry class as the formula for the area of a triangle. Otherwise, if you’re like me, you might have scrolled up to the `Triangle` and `Rectangle` `class` definitions and seen this same code in `Triangle.area()`.
+>
+
+Did you guess that `Python` will try to call `Triangle.area()`? This is because of something
+called the _method resolution order_.
+
+### Method resolution order
+
+The method resolution order (or `MRO`) tells `Python` how to search for inherited methods. This comes in handy when you’re using `super()` because the `MRO` tells you exactly where Python will look for a method you’re calling with `super()` and in _what order_.
+
+_Every class_ has an `.__mro__` attribute that allows us to _inspect the order_, so let’s do that:
+
+```Python
+>>> RightPyramid.__mro__
+(<class '__main__.RightPyramid'>, <class '__main__.Triangle'>,
+ <class '__main__.Square'>, <class '__main__.Rectangle'>,
+ <class 'object'>)
+```
+
+This tells us that methods will be searched first in `Rightpyramid`, then in `Triangle`, then in `Square`, then `Rectangle`, and then, if nothing is found, in object, from which all classes originate.
+
+The problem here is that the interpreter is searching for `.area()` in `Triangle` _before_ `Square` and `Rectangle`, and upon finding `.area()` in `Triangle`, `Python` calls it _instead of the one you want_. Because `Triangle.area()` expects there to be a `.height` and a `.base` attribute, `Python` throws an `AttributeError`.
+
+Luckily, you have some control over how the `MRO` is constructed. Just by changing the signature of the `RightPyramid` class, you can search in the order you want, and the methods will resolve correctly:
+
+```Python
+class RightPyramid(Square, Triangle):
+  def __init__(self, base, slant_height):
+    self.base = base
+    self.slant_height = slant_height
+    super().__init__(self.base)
+
+  def area(self):
+    base_area = super().area()
+    perimeter = super().perimeter()
+    return 0.5 * perimeter * self.slant_height + base_area
+```
+
+Notice that `RightPyramid` initializes partially with the `.__init__()` from the `Square` class. This allows `.area()` to use the `.length` on the object, as is designed.
+
+Now, you can build a pyramid, inspect the `MRO`, and calculate the surface area:
+
+```Python
+>>> pyramid = RightPyramid(2, 4)
+>>> RightPyramid.__mro__
+(<class '__main__.RightPyramid'>, <class '__main__.Square'>,
+<class '__main__.Rectangle'>, <class '__main__.Triangle'>,
+<class 'object'>)
+>>> pyramid.area()
+20.0
+```
+
+You see that the `MRO` is now what you’d expect, and you can inspect the area of the pyramid as well, thanks to `.area()` and `.perimeter()`.
+
+_There’s still a problem here, though._ For the sake of simplicity, I did a few things wrong in this example: the first, and arguably most importantly, was that I had two separate classes with the same method name and signature.
+
+This causes issues with method resolution, because the first instance of `.area()` that is encountered in the `MRO` list will be called.
+
+When you’re using `super()` with multiple inheritance, it’s imperative to design your classes to cooperate. Part of this is _ensuring that your methods are unique_ so that they get resolved in the `MRO`, by making sure _method signatures are unique_—whether by using method names or method parameters.
+
+In this case, to avoid a complete overhaul of your code, you can rename the `Triangle` class’s `.area()` method to `.tri_area()`. This way, the area methods can continue using class properties rather than taking external parameters:
 
 ```Python
 class Triangle:
@@ -281,6 +337,8 @@ class Triangle:
   def tri_area(self):
       return 0.5 * self.base * self.height
 ```
+
+Let’s also go ahead and use this in the `RightPyramid` class:
 
 ```Python
 class RightPyramid(Square, Triangle):
