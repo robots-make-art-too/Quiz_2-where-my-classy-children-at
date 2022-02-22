@@ -44,7 +44,7 @@ Inside ~both~ the ~`p5jsQ2/` and~ `pydeQ2/` folder is a `data` folder. If you ne
 
 ## BIG PICTURE
 
-There is a robot family. Somehow they are a multi-generational family all living together. I don't remember all their names so you'll have to find a way to identify them individually. They _kind-of_ look alike, but I'm not sure which robot children belong to which robot parents... or if some are grand-children or grand-parents!! Need your help sorting this out. We don't have _alot_ of time because they have to leave Sunday.
+There is a robot family. Somehow they are a multi-generational family all living together. I don't remember all their names so you'll have to find a way to identify them individually. They _kind-of_ look alike, but I'm not sure which robot children belong to which robot parents... or if some are grand-children or grand-parents!! Need your help sorting this out. We don't have _alot_ of time because they have to leave ~Sunday~ turns out they are staying for `Family Day`.
 >
 > Your mission is to find out who is who, what they look like, and what they can do. Just in case they leave early, you'll have to _draw_ them to the screen and save it as a photo, `classy-robot-family.png`. I want to put it in my digital photo album. You might want to consider how you will label them, and how you will show me who is related to who, and how (maybe use text? maybe print their name to screen? or file? you could draw a line between parents and children? or maybe you draw them oldest in the center and children in front of parents? you decide!)
 >
